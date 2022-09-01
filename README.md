@@ -1,2 +1,2 @@
 # bazel-poc
-Evaluate the development experience of bazel
+Evaluate development experience of bazel.
