@@ -1,0 +1,14 @@
+load("@rules_python//python:defs.bzl", "py_binary", "py_test")
+
+py_binary(
+    name =  "hello_world",
+    srcs = ["hello_world.py"],
+)
+
+py_test(
+    name = "hello_world_test",
+    srcs = ["hello_world_test.py"],
+    deps = [
+        ":hello_world",
+    ]
+)
